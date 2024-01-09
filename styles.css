@@ -1,1 +1,36 @@
 /*styles.css*/
+
+
+
+h2{
+    border:2px solid red;
+    display:flex;
+    justify-content: center;
+    margin:5px;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+}
+
+.box-container{
+    border:2px solid black;
+    height :600px;
+    width:400px;
+
+}
+
+.buttons{
+    border:2px solid orange;
+    display:flex;
+    justify-content: space-between;
+    margin:5px;
+}
+
+#boxes{
+    border:2px solid purple;
+    margin:5px;
+    height:450px
+
+}
