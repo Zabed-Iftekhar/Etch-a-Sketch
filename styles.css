@@ -1,36 +1,160 @@
 /*styles.css*/
-
-
-
-h2{
-    border:2px solid red;
-    display:flex;
-    justify-content: center;
-    margin:5px;
+*{  
+    
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Roboto';
 }
 
+
+#header{
+    width: 498px;
+    background-color: white;
+    height: 80px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 10px 10px 20px #0f0f10;
+}
 body{
-    display:flex;
+    background-color: #292b2f;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    position: relative;
 }
-
-.box-container{
-    border:2px solid black;
-    height :600px;
-    width:400px;
-
-}
-
-.buttons{
-    border:2px solid orange;
+.container{
+    justify-self: center;
     display:flex;
-    justify-content: space-between;
-    margin:5px;
+    
+    justify-content:center;
+    flex-wrap: wrap;
+    box-shadow: 10px 10px 20px #0f0f10;
+    height:500px;
+    width:500px;
 }
 
-#boxes{
-    border:2px solid purple;
-    margin:5px;
-    height:450px
+.button-container{
+    margin-top: 30px;
+    width:500px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 10px 10px 20px #0f0f10;
+}
+
+.color-buttons > button{
+    width:40px;
+    height:40px;
+    padding:10px;
+    margin-top: 10px;
+    border-radius: 50%;
+    border:none;  
+}
+
+#blue{
+    background-color: #3363ff;
+}
+
+#orange{
+    background-color: #fe9000;
+}
+#yellow{
+    background-color: #fff020;
+}
+#red{
+    background-color: #fd004c;
+}
+#green{
+    background-color: #3edf4b;
+    
+}
+#purple {
+    background-color: #b102b7;
+}
+
+#white{
+    background-color: rgba(255, 255, 255, 0.944);
+    border: 1px solid rgb(173, 171, 171)
+}
+#rainbow{
+    background:conic-gradient(
+        #fd004c,
+        #fe9000,
+        #fff020,
+        #3edf4b,
+        #3363ff,
+        #b102b7,
+        #fd004c
+    );      
+}
+
+.size-buttons{
+    padding: 10px;
+    padding-left: 0px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    width:500px;
+    
+    background-color: #ffffff;
+    
+}
+
+.size-buttons>button{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    border:none;
+    background-color: rgb(186, 183, 183);
+}
+
+.size-buttons>button:hover{
+    background-color:aquamarine;
+}
+.size-buttons>button:active{
+    background-color: red;
+}
+
+.size-buttons>#size-text{
+    
+    width:150px;
+    height:50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 
 }
+.color-buttons{
+    width:500px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    background-color: white;;
+    display: flex;
+    justify-content: right;
+    gap:5px;
+    align-items: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.color-buttons>button:hover{
+    transform:translateY(-5px);
+    transition:0.3s;
+}
+.color-buttons>#color-text{
+    width:150px;
+    height:50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
